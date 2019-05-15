@@ -124,4 +124,5 @@ The path of this project in my server is: `/home/guoxiu.hgx/hgx/Research/BIRD`.
   
 ## Cite
 If you use the codes or datasets, please cite the following paper:
-`To be continue...`
+
+* Guoxiu He, Yangyang Kang, Zhe Gao, Zhuoren Jiang, Changlong Sun, Xiaozhong Liu, Wei Lu, Qiong Zhang, and Luo Si. 2019. Finding Camouflaged Needle in a Haystack? Pornographic Products Detection via Berrypicking Tree Model. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR ’19), July 21–25, 2019, Paris, France. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3331184.3331197
