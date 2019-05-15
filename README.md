@@ -104,13 +104,12 @@ The path of this project in my server is: `/home/guoxiu.hgx/hgx/Research/BIRD`.
     ```
 
 ## Prepare for the Dataset
-* Download Dataset from [This URL](https://www.baidu.com).
+* Download Dataset from [This URL](https://drive.google.com/file/d/1uiUNp7DdPD_yYX8v8BjOFLJu0-CldnsQ/view?usp=sharing).
 * Put the Dataset to the right place as the structure shows.
 
 ## How to Reproduce the Results
 
-* Note that we have made a [pre-trained BIRD model](https://www.baidu.com) publicly available. 
-Please download it and put it to the right place as the structure show.
+* Note that we have made a pre-trained BIRD model publicly available. 
 
 * train a model: 
   * `CUDA_VISIBLE_DEVICES=0 nohup python ./main.py --phase train --model_name bird --data_name ppdd --memory 0.45 &`
