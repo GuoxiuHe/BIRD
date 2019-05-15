@@ -1,0 +1,115 @@
+2019-05-05 14:59:06,487 - AntiSpam_Secure - INFO - Running with args : Namespace(data_name='ppdd', gpu='0', log_path='./logs/', memory='0', model_name='bird', model_path='None', phase='predict_items2', suffix='')
+2019-05-05 14:59:06,487 - AntiSpam_Secure - INFO - Load data_set and vocab...
+2019-05-05 14:59:06,487 - AntiSpam_Secure - INFO - Data config is {'data_name': 'PPDD', 'train_size': 2887628, 'train_size_True': 2887628, 'black_size': 114250, 'white_size': 2068683, 'train_black_size': 79975, 'real_train_black_size': 1439550, 'train_white_size': 1448078, 'val_black_size': 17137, 'val_white_size': 310302, 'test_black_size': 17138, 'test_white_size': 310303, 'user_index': 908540, 'word_index': 33000, 'query_word_index': 33000, 'nb_classes': 2}
+2019-05-05 14:59:06,487 - AntiSpam_Secure - INFO - Model config is {'model_name': 'BIRD', 'learning_rate': 0.002, 'weight_decay': 0.0, 'optimizer': 'adam', 'batch_size': 32, 'epochs': 5, 'evaluate': 1, 'embedding_dim': 32, 'rnn_dim': 16, 'dense_dim': 32, 'cnn_filters': 32, 'dropout_rate': 0.75}
+2019-05-05 14:59:06,487 - AntiSpam_Secure - INFO - Memory in train 0.0.
+2019-05-05 14:59:07,866 - AntiSpam_Secure - INFO - set nb_words.
+2019-05-05 14:59:07,866 - AntiSpam_Secure - INFO - set nb_query_words.
+2019-05-05 14:59:07,866 - AntiSpam_Secure - INFO - set nb_users.
+2019-05-05 14:59:07,866 - AntiSpam_Secure - INFO - set data_name.
+2019-05-05 14:59:07,866 - AntiSpam_Secure - INFO - set model_name.
+2019-05-05 14:59:07,866 - AntiSpam_Secure - INFO - set from model_config.
+2019-05-05 14:59:07,866 - AntiSpam_Secure - INFO - set from data_config.
+2019-05-05 14:59:07,870 - AntiSpam_Secure - INFO - setup placeholders.
+2019-05-05 14:59:07,878 - AntiSpam_Secure - INFO - get embed.
+2019-05-05 14:59:07,993 - AntiSpam_Secure - INFO - [layer]: embedded_transfer	[shape]: [None, None, 32] 
+[33m [Memory] Total Memory Use: 699.4922 MB 	 Resident: 716280 Shared: 0 UnshareData: 0 UnshareStack: 0 [0m
+2019-05-05 14:59:08,000 - AntiSpam_Secure - INFO - [layer]: embedded_i_transfer	[shape]: [None, None, None, None, 32] 
+[33m [Memory] Total Memory Use: 699.4922 MB 	 Resident: 716280 Shared: 0 UnshareData: 0 UnshareStack: 0 [0m
+2019-05-05 14:59:08,007 - AntiSpam_Secure - INFO - [layer]: embedded_q_transfer	[shape]: [None, None, None, 32] 
+[33m [Memory] Total Memory Use: 699.4922 MB 	 Resident: 716280 Shared: 0 UnshareData: 0 UnshareStack: 0 [0m
+2019-05-05 14:59:08,020 - AntiSpam_Secure - INFO - [layer]: word_level_query_output	[shape]: [None, 32] 
+[33m [Memory] Total Memory Use: 699.7344 MB 	 Resident: 716528 Shared: 0 UnshareData: 0 UnshareStack: 0 [0m
+2019-05-05 14:59:08,078 - AntiSpam_Secure - INFO - [layer]: title_level_title_output	[shape]: [None, 32] 
+[33m [Memory] Total Memory Use: 700.2422 MB 	 Resident: 717048 Shared: 0 UnshareData: 0 UnshareStack: 0 [0m
+2019-05-05 14:59:08,540 - AntiSpam_Secure - INFO - [layer]: Pooling	[shape]: [None, 64] 
+[33m [Memory] Total Memory Use: 706.0508 MB 	 Resident: 722996 Shared: 0 UnshareData: 0 UnshareStack: 0 [0m
+2019-05-05 14:59:08,580 - AntiSpam_Secure - INFO - [layer]: Logits	[shape]: [None, 2] 
+[33m [Memory] Total Memory Use: 706.5508 MB 	 Resident: 723508 Shared: 0 UnshareData: 0 UnshareStack: 0 [0m
+2019-05-05 14:59:08,581 - AntiSpam_Secure - INFO - [layer]: output	[shape]: [None] 
+[33m [Memory] Total Memory Use: 706.5508 MB 	 Resident: 723508 Shared: 0 UnshareData: 0 UnshareStack: 0 [0m
+2019-05-05 14:59:08,584 - AntiSpam_Secure - INFO - [layer]: proba	[shape]: [2] 
+[33m [Memory] Total Memory Use: 706.5508 MB 	 Resident: 723508 Shared: 0 UnshareData: 0 UnshareStack: 0 [0m
+2019-05-05 14:59:08,585 - AntiSpam_Secure - INFO - BIRD inference.
+2019-05-05 14:59:08,607 - AntiSpam_Secure - INFO - Calculate Loss.
+2019-05-05 14:59:10,785 - AntiSpam_Secure - INFO - Time to build graph: 2.919191598892212 s
+2019-05-05 14:59:10,785 - AntiSpam_Secure - INFO - prepare/dense/kernel:0
+2019-05-05 14:59:10,785 - AntiSpam_Secure - INFO - prepare/dense/bias:0
+2019-05-05 14:59:10,785 - AntiSpam_Secure - INFO - prepare/dense_1/kernel:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - prepare/dense_1/bias:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - prepare/dense_2/kernel:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - prepare/dense_2/bias:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/dense/kernel:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/dense/bias:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/fw/bptru_cell/W_u:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/fw/bptru_cell/W_c:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/fw/bptru_cell/W_h:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/fw/bptru_cell/b_f:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/fw/bptru_cell/v_f:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/fw/bptru_cell/b_r:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/fw/bptru_cell/v_r:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/fw/bptru_cell/b_o:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/bw/bptru_cell/W_u:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/bw/bptru_cell/W_c:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/bw/bptru_cell/W_h:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/bw/bptru_cell/b_f:0
+2019-05-05 14:59:10,786 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/bw/bptru_cell/v_f:0
+2019-05-05 14:59:10,787 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/bw/bptru_cell/b_r:0
+2019-05-05 14:59:10,787 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/bw/bptru_cell/v_r:0
+2019-05-05 14:59:10,787 - AntiSpam_Secure - INFO - encoding/bidirectional_rnn/bw/bptru_cell/b_o:0
+2019-05-05 14:59:10,787 - AntiSpam_Secure - INFO - output/dense_4/kernel:0
+2019-05-05 14:59:10,787 - AntiSpam_Secure - INFO - output/dense_4/bias:0
+2019-05-05 14:59:10,787 - AntiSpam_Secure - INFO - output/dense_5/kernel:0
+2019-05-05 14:59:10,787 - AntiSpam_Secure - INFO - output/dense_5/bias:0
+2019-05-05 14:59:10,787 - AntiSpam_Secure - INFO - 
+prepare/dense/kernel:0 (32, 32)=1024
+prepare/dense/bias:0 32
+prepare/dense_1/kernel:0 (32, 32)=1024
+prepare/dense_1/bias:0 32
+prepare/dense_2/kernel:0 (32, 32)=1024
+prepare/dense_2/bias:0 32
+encoding/dense/kernel:0 (64, 32)=2048
+encoding/dense/bias:0 32
+encoding/bidirectional_rnn/fw/bptru_cell/W_u:0 (32, 64)=2048
+encoding/bidirectional_rnn/fw/bptru_cell/W_c:0 (16, 16)=256
+encoding/bidirectional_rnn/fw/bptru_cell/W_h:0 (16, 16)=256
+encoding/bidirectional_rnn/fw/bptru_cell/b_f:0 16
+encoding/bidirectional_rnn/fw/bptru_cell/v_f:0 16
+encoding/bidirectional_rnn/fw/bptru_cell/b_r:0 16
+encoding/bidirectional_rnn/fw/bptru_cell/v_r:0 16
+encoding/bidirectional_rnn/fw/bptru_cell/b_o:0 16
+encoding/bidirectional_rnn/bw/bptru_cell/W_u:0 (32, 64)=2048
+encoding/bidirectional_rnn/bw/bptru_cell/W_c:0 (16, 16)=256
+encoding/bidirectional_rnn/bw/bptru_cell/W_h:0 (16, 16)=256
+encoding/bidirectional_rnn/bw/bptru_cell/b_f:0 16
+encoding/bidirectional_rnn/bw/bptru_cell/v_f:0 16
+encoding/bidirectional_rnn/bw/bptru_cell/b_r:0 16
+encoding/bidirectional_rnn/bw/bptru_cell/v_r:0 16
+encoding/bidirectional_rnn/bw/bptru_cell/b_o:0 16
+output/dense_4/kernel:0 (64, 32)=2048
+output/dense_4/bias:0 32
+output/dense_5/kernel:0 (32, 2)=64
+output/dense_5/bias:0 2
+
+2019-05-05 14:59:10,787 - AntiSpam_Secure - INFO - Total 28 variables, 12,674 params
+2019-05-05 14:59:14,586 - AntiSpam_Secure - INFO - There are 12674 parameters in the model
+2019-05-05 14:59:14,998 - AntiSpam_Secure - INFO - All values in the Network are {'logger': <Logger AntiSpam_Secure (INFO)>, 'maxlen': 150, 'nb_classes': 2, 'nb_words': 33001, 'nb_users': 0, 'nb_query_words': 0, 'embedding_dim': 32, 'dense_dim': 32, 'rnn_dim': 16, 'cnn_filters': 32, 'dropout_rate': 0.75, 'initializer': <tensorflow.python.ops.init_ops.RandomNormal object at 0x7f0addc90fd0>, 'word_initializer': <tensorflow.python.ops.init_ops.RandomNormal object at 0x7f0addb78048>, 'zero_initializer': <tensorflow.python.ops.init_ops.Zeros object at 0x7f0addb78080>, 'learning_rate': 0.002, 'weight_decay': 0.0, 'optim_type': 'adam', 'batch_size': 64, 'model_name': 'BIRD', 'data_name': 'PPDD', 'gpu': '0', 'memory': 0.0, 'sess': <tensorflow.python.client.session.Session object at 0x7f0addb780b8>, 'input_x': <tf.Tensor 'input_x:0' shape=(?, ?) dtype=int32>, 'input_x_i': <tf.Tensor 'input_x_i:0' shape=(?, ?, ?, ?) dtype=int32>, 'input_x_q': <tf.Tensor 'input_x_q:0' shape=(?, ?, ?) dtype=int32>, 'input_y': <tf.Tensor 'input_y:0' shape=(?, 2) dtype=int32>, 'dropout_keep_prob': <tf.Tensor 'dropout_keep_prob:0' shape=<unknown> dtype=float32>, 'word_embeddings': <tf.Variable 'word_embedding/word_embeddings_random:0' shape=(33001, 32) dtype=float32_ref>, 'embedded': <tf.Tensor 'prepare/embedding_lookup/Identity:0' shape=(?, ?, 32) dtype=float32>, 'embedded_i': <tf.Tensor 'prepare/embedding_lookup_1/Identity:0' shape=(?, ?, ?, ?, 32) dtype=float32>, 'embedded_q': <tf.Tensor 'prepare/embedding_lookup_2/Identity:0' shape=(?, ?, ?, 32) dtype=float32>, 'embedded_transfer': <tf.Tensor 'prepare/dropout/mul:0' shape=(?, ?, 32) dtype=float32>, 'embedded_i_transfer': <tf.Tensor 'prepare/dropout_1/mul:0' shape=(?, ?, ?, ?, 32) dtype=float32>, 'embedded_q_transfer': <tf.Tensor 'prepare/dropout_2/mul:0' shape=(?, ?, ?, 32) dtype=float32>, 'sample_size': <tf.Tensor 'encoding/unstack_1:0' shape=() dtype=int32>, 'query_size': <tf.Tensor 'encoding/unstack_1:1' shape=() dtype=int32>, 'query_len': <tf.Tensor 'encoding/unstack:2' shape=() dtype=int32>, 'word_level_query_input': <tf.Tensor 'encoding/Reshape:0' shape=(?, ?, 32) dtype=float32>, 'word_level_query_output': <tf.Tensor 'encoding/dropout/mul:0' shape=(?, 32) dtype=float32>, 'sent_level_query': <tf.Tensor 'encoding/Reshape_1:0' shape=(?, ?, 32) dtype=float32>, 'title_size': <tf.Tensor 'encoding/unstack_1:2' shape=() dtype=int32>, 'title_len': <tf.Tensor 'encoding/unstack_1:3' shape=() dtype=int32>, 'sent_level_query_rely': <tf.Tensor 'encoding/Reshape_2:0' shape=(?, 32) dtype=float32>, 'word_level_title_input': <tf.Tensor 'encoding/Reshape_3:0' shape=(?, 32) dtype=float32>, 'title_word_atten': <tf.Tensor 'encoding/Reshape_5:0' shape=(?, 1) dtype=float32>, 'word_level_title_input_atten': <tf.Tensor 'encoding/Reshape_6:0' shape=(?, ?, 32) dtype=float32>, 'word_level_title_output': <tf.Tensor 'encoding/Sum_1:0' shape=(?, 32) dtype=float32>, 'sent_level_query_rely_2': <tf.Tensor 'encoding/Reshape_7:0' shape=(?, 32) dtype=float32>, 'word_level_title_output_atten': <tf.Tensor 'encoding/Reshape_9:0' shape=(?, 1) dtype=float32>, 'title_level_title_input_atten': <tf.Tensor 'encoding/Mul_22:0' shape=(?, 32) dtype=float32>, 'title_level_title_input': <tf.Tensor 'encoding/Reshape_10:0' shape=(?, ?, 32) dtype=float32>, 'title_level_title_output': <tf.Tensor 'encoding/dropout_1/mul:0' shape=(?, 32) dtype=float32>, 'query_level_title': <tf.Tensor 'encoding/Reshape_11:0' shape=(?, ?, 32) dtype=float32>, 'combine_gate': <tf.Tensor 'encoding/dense/Sigmoid:0' shape=(?, ?, 32) dtype=float32>, 'query_level': <tf.Tensor 'encoding/add:0' shape=(?, ?, 32) dtype=float32>, 'cell_memory': <tf.Tensor 'encoding/concat_1:0' shape=(?, 32) dtype=float32>, 'rnn_outputs': <tf.Tensor 'encoding/concat_2:0' shape=(?, ?, 32) dtype=float32>, 'last_hidden': <tf.Tensor 'encoding/strided_slice:0' shape=(?, 32) dtype=float32>, 'last_hidden_reply': <tf.Tensor 'encoding/Tile_2:0' shape=(?, ?, 32) dtype=float32>, 'numerator': <tf.Tensor 'encoding/Sum_4:0' shape=(?, ?) dtype=float32>, 'denominator': <tf.Tensor 'encoding/Mul_27:0' shape=(?, ?) dtype=float32>, 'last_hidden_atten': <tf.Tensor 'encoding/ExpandDims_4:0' shape=(?, ?, 1) dtype=float32>, 'output_attentive': <tf.Tensor 'encoding/Sum_7:0' shape=(?, 32) dtype=float32>, 'pooling': <tf.Tensor 'encoding/concat_3:0' shape=(?, 64) dtype=float32>, 'dense': <tf.Tensor 'output/dropout/mul:0' shape=(?, 32) dtype=float32>, 'logits': <tf.Tensor 'output/dense_5/BiasAdd:0' shape=(?, 2) dtype=float32>, 'output': <tf.Tensor 'output/ArgMax:0' shape=(?,) dtype=int64>, 'proba': <tf.Tensor 'output/strided_slice:0' shape=(2,) dtype=float32>, 'loss': <tf.Tensor 'Mean:0' shape=() dtype=float32>, 'all_params': [<tf.Variable 'prepare/dense/kernel:0' shape=(32, 32) dtype=float32>, <tf.Variable 'prepare/dense/bias:0' shape=(32,) dtype=float32>, <tf.Variable 'prepare/dense_1/kernel:0' shape=(32, 32) dtype=float32>, <tf.Variable 'prepare/dense_1/bias:0' shape=(32,) dtype=float32>, <tf.Variable 'prepare/dense_2/kernel:0' shape=(32, 32) dtype=float32>, <tf.Variable 'prepare/dense_2/bias:0' shape=(32,) dtype=float32>, <tf.Variable 'encoding/dense/kernel:0' shape=(64, 32) dtype=float32_ref>, <tf.Variable 'encoding/dense/bias:0' shape=(32,) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/fw/bptru_cell/W_u:0' shape=(32, 64) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/fw/bptru_cell/W_c:0' shape=(16, 16) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/fw/bptru_cell/W_h:0' shape=(16, 16) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/fw/bptru_cell/b_f:0' shape=(16,) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/fw/bptru_cell/v_f:0' shape=(16,) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/fw/bptru_cell/b_r:0' shape=(16,) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/fw/bptru_cell/v_r:0' shape=(16,) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/fw/bptru_cell/b_o:0' shape=(16,) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/bw/bptru_cell/W_u:0' shape=(32, 64) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/bw/bptru_cell/W_c:0' shape=(16, 16) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/bw/bptru_cell/W_h:0' shape=(16, 16) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/bw/bptru_cell/b_f:0' shape=(16,) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/bw/bptru_cell/v_f:0' shape=(16,) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/bw/bptru_cell/b_r:0' shape=(16,) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/bw/bptru_cell/v_r:0' shape=(16,) dtype=float32_ref>, <tf.Variable 'encoding/bidirectional_rnn/bw/bptru_cell/b_o:0' shape=(16,) dtype=float32_ref>, <tf.Variable 'output/dense_4/kernel:0' shape=(64, 32) dtype=float32>, <tf.Variable 'output/dense_4/bias:0' shape=(32,) dtype=float32>, <tf.Variable 'output/dense_5/kernel:0' shape=(32, 2) dtype=float32>, <tf.Variable 'output/dense_5/bias:0' shape=(2,) dtype=float32>], 'optimizer': <tensorflow.python.training.adam.AdamOptimizer object at 0x7f0acc1f8240>, 'train_op': <tf.Operation 'Adam' type=NoOp>, 'save_dir': '/home/guoxiu.hgx/hgx/Research/BIRD/Scripts/weights/PPDD/BIRD/', 'saver': <tensorflow.python.training.saver.Saver object at 0x7f0a8c3334e0>}
+2019-05-05 14:59:14,998 - AntiSpam_Secure - INFO - ####################
+2019-05-05 14:59:14,998 - AntiSpam_Secure - INFO - evaluate predict items.
+2019-05-05 14:59:15,064 - AntiSpam_Secure - INFO - Model restored from /home/guoxiu.hgx/hgx/Research/BIRD/Scripts/weights/PPDD/BIRD/, with prefix BIRD_last_epoch
+2019-05-05 14:59:15,064 - AntiSpam_Secure - INFO - ********************
+2019-05-05 14:59:15,064 - AntiSpam_Secure - INFO - Start to evaluate on batch.
+2019-05-05 14:59:15,925 - AntiSpam_Secure - INFO - len of items 1206.
+2019-05-05 14:59:19,533 - AntiSpam_Secure - INFO - Done process: 0.10033167495854063.
+2019-05-05 14:59:22,511 - AntiSpam_Secure - INFO - Done process: 0.20066334991708126.
+2019-05-05 14:59:25,454 - AntiSpam_Secure - INFO - Done process: 0.30016583747927034.
+2019-05-05 14:59:28,371 - AntiSpam_Secure - INFO - Done process: 0.40049751243781095.
+2019-05-05 14:59:31,320 - AntiSpam_Secure - INFO - Done process: 0.5008291873963516.
+2019-05-05 14:59:34,189 - AntiSpam_Secure - INFO - Done process: 0.6003316749585407.
+2019-05-05 14:59:37,117 - AntiSpam_Secure - INFO - Done process: 0.7006633499170812.
+2019-05-05 14:59:40,041 - AntiSpam_Secure - INFO - Done process: 0.8001658374792703.
+2019-05-05 14:59:42,933 - AntiSpam_Secure - INFO - Done process: 0.900497512437811.
+2019-05-05 14:59:45,827 - AntiSpam_Secure - INFO - Done process: 1.0.
+2019-05-05 14:59:45,833 - AntiSpam_Secure - INFO - Results: 0.0000	Acc:0.6144	Precision:0.4574	Recall:0.7056	F1Score:0.5550	F0_5score:0.4920	F2_score:0.6365	map_score:0.4181	ndcg_score:0.6942
+2019-05-05 14:59:45,833 - AntiSpam_Secure - INFO - Evaluate time: 0h: 0m: 30s
+2019-05-05 14:59:45,837 - AntiSpam_Secure - INFO - The whole program spends time: 0h: 0m: 38s

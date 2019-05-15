@@ -1,0 +1,18 @@
+{
+ "data_name": "PPDD",
+ "train_size": 2887628,
+ "train_size_True": 2887628,
+ "black_size": 114250,
+ "white_size": 2068683,
+ "train_black_size": 79975,
+ "real_train_black_size": 1439550,
+ "train_white_size": 1448078,
+ "val_black_size": 17137,
+ "val_white_size": 310302,
+ "test_black_size": 17138,
+ "test_white_size": 310303,
+ "user_index": 908540,
+ "word_index": 33000,
+ "query_word_index": 33000,
+ "nb_classes": 2
+}

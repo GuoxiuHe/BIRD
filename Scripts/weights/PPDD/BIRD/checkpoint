@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/guoxiu.hgx/hgx/Research/BIRD/Scripts/weights/PPDD/BIRD/BIRD"
+all_model_checkpoint_paths: "/home/guoxiu.hgx/hgx/Research/BIRD/Scripts/weights/PPDD/BIRD/BIRD"

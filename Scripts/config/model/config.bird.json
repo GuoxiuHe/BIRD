@@ -1,0 +1,16 @@
+{
+  "model_name": "BIRD",
+
+  "learning_rate": 0.002,
+  "weight_decay": 0.0,
+  "optimizer": "adam",
+  "batch_size": 32,
+  "epochs": 5,
+  "evaluate": 1,
+
+  "embedding_dim": 32,
+  "rnn_dim": 16,
+  "dense_dim": 32,
+  "cnn_filters": 32,
+  "dropout_rate": 0.75
+}
