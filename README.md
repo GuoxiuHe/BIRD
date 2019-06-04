@@ -94,18 +94,32 @@ The path of this project in my server is: `/home/guoxiu.hgx/hgx/Research/BIRD`.
   * `git clone https://github.com/GuoxiuHe/BIRD.git`
   * modify the code in every script refer to your own path:
   
-    ```
-    curdir = os.path.dirname(os.path.abspath(__file__))
-    sys.path.insert(0, os.path.dirname(curdir))
-    rootdir = '/'.join(curdir.split('/')[:4])
-    PRO_NAME = 'BIRD'
-    prodir = rootdir + '/Research/' + PRO_NAME
-    sys.path.insert(0, prodir)
-    ```
+        ```
+        curdir = os.path.dirname(os.path.abspath(__file__))
+        sys.path.insert(0, os.path.dirname(curdir))
+        rootdir = '/'.join(curdir.split('/')[:4])
+        PRO_NAME = 'BIRD'
+        prodir = rootdir + '/Research/' + PRO_NAME
+        sys.path.insert(0, prodir)
+        ```
 
 ## Prepare for the Dataset
 * Download Dataset from [This URL](https://drive.google.com/file/d/1uiUNp7DdPD_yYX8v8BjOFLJu0-CldnsQ/view?usp=sharing).
 * Put the Dataset to the right place as the structure shows.
+* Data Structure:
+
+    ```
+    {
+    "user_id": "XXXXXX",
+    "item_id": "XXXXXX",
+    "title": "XXXXXX",
+    "session": [["query1", ["product1", "product2", ...]],
+                ["query2", ["product3", "product4", ...]],
+                ...
+               ]
+    "label": "black_list"
+    }
+    ```
 
 ## How to Reproduce the Results
 
