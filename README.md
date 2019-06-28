@@ -105,7 +105,7 @@ The path of this project in my server is: `/home/guoxiu.hgx/hgx/Research/BIRD`.
 
 ## Prepare for the Dataset
 * Download Dataset from [This URL](https://drive.google.com/file/d/1uiUNp7DdPD_yYX8v8BjOFLJu0-CldnsQ/view?usp=sharing).
-  * I am very grateful to Miss Sisi Gui for her effort to make another copy on BaiduWangPan which will be very friendly to Chinese researchers:
+  * I am very grateful to Miss Sisi Gui for her effort to make another copy on Baidu Network Disk, which will be very friendly to Chinese researchers:
     ```
     link: https://pan.baidu.com/s/1n15POLjeG66uiU4KVJUtgw
     code：rmqn 
